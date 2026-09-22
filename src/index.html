@@ -1,13 +1,418 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>MP1</title>
-    </head>
-    <body>
-        <h1>Hello World! Welcome to MP1!</h1>
-        <img src="assets/image.jpg">
-    </body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f6f4ed" />
+    <meta
+      name="description"
+      content="Fieldwork: a little inspiration to take the long way home. Explore wild places and thoughtful field notes."
+    />
+    <title>Fieldwork — A little further outside.</title>
+    <link rel="icon" href="assets/icons/compass.svg" type="image/svg+xml" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header" id="site-header">
+      <div class="nav-wrap container">
+        <a class="brand" href="#home" aria-label="Fieldwork home"
+          ><span class="icon icon-compass" aria-hidden="true"></span
+          >fieldwork<span class="brand-period">.</span></a
+        >
+        <button
+          class="menu-toggle"
+          aria-expanded="false"
+          aria-controls="main-nav"
+        >
+          Menu <span class="icon icon-menu" aria-hidden="true"></span>
+        </button>
+        <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+          <a href="#home" aria-current="location">Home</a
+          ><a href="#explore">Explore</a><a href="#philosophy">Our philosophy</a
+          ><a href="#journal">Field notes</a>
+        </nav>
+        <a class="nav-cta" href="#explore"
+          >Find your outside <span aria-hidden="true">↗</span></a
+        >
+      </div>
+    </header>
+    <main id="main">
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <div class="container hero-inner">
+          <div class="hero-top">
+            <span class="eyebrow"
+              ><span class="little-dot"></span> FOR THE WANDERERS &amp; THE
+              WONDERERS</span
+            ><span class="hero-edition"
+              >AN OPEN-AIR JOURNAL &nbsp; / &nbsp; VOL. 01</span
+            >
+          </div>
+          <div class="hero-copy">
+            <h1 id="hero-title">A little further<br /><em>outside.</em></h1>
+            <p>
+              Less scrolling. More wandering.<br />Find a place that makes you
+              feel small,<br />and a moment that stays with you.
+            </p>
+            <a class="button button-orange" href="#explore"
+              >Explore the collection <span aria-hidden="true">↗</span></a
+            >
+          </div>
+          <div class="hero-bottom">
+            <a href="#explore" class="scroll-cue"
+              ><span class="scroll-circle" aria-hidden="true">↓</span> A CHANGE
+              OF SCENERY STARTS HERE</a
+            ><span class="hero-location"
+              ><span class="icon icon-pin" aria-hidden="true"></span> Somewhere
+              beyond the everyday.</span
+            >
+          </div>
+        </div>
+        <span class="hero-side-note" aria-hidden="true"
+          >GO SLOW. LOOK CLOSER.</span
+        >
+      </section>
+      <div class="intro-strip">
+        <div class="container">
+          <p>No bucket lists. Just better moments.</p>
+          <span
+            >Fresh air. Open trails. A different perspective.
+            <span aria-hidden="true">✳</span></span
+          >
+        </div>
+      </div>
+      <section
+        class="explore section-space"
+        id="explore"
+        aria-labelledby="explore-title"
+      >
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">
+                <span class="section-number">01 /</span> FOLLOW YOUR CURIOSITY
+              </p>
+              <h2 id="explore-title">Find your kind of <em>away.</em></h2>
+            </div>
+            <p>
+              You don’t have to go far.<br />You just have to go a little
+              differently.
+            </p>
+          </div>
+          <div
+            class="carousel"
+            role="region"
+            aria-roledescription="carousel"
+            aria-label="Places to wander"
+            tabindex="0"
+          >
+            <div class="slides">
+              <article
+                class="slide is-active"
+                role="group"
+                aria-roledescription="slide"
+                aria-label="1 of 3: Into the alpine"
+              >
+                <img
+                  src="assets/mountain.jpg"
+                  width="2200"
+                  height="1467"
+                  alt="Snow-covered mountains above a green alpine valley"
+                />
+                <div class="slide-shade"></div>
+                <div class="slide-content">
+                  <span class="tag">HIGHER PERSPECTIVES</span>
+                  <h3>Into the alpine.</h3>
+                  <p>Big skies. Quiet trails. Room to breathe.</p>
+                  <button class="text-link" data-story="alpine">
+                    Take a closer look <span aria-hidden="true">↗</span>
+                  </button>
+                </div>
+                <span class="slide-note">THE MOUNTAIN COLLECTION</span>
+              </article>
+              <article
+                class="slide"
+                role="group"
+                aria-roledescription="slide"
+                aria-label="2 of 3: Among the evergreens"
+                hidden
+              >
+                <img
+                  src="assets/forest.jpg"
+                  width="1800"
+                  height="1200"
+                  alt="Sunlight filtering through a dense green forest"
+                  loading="lazy"
+                />
+                <div class="slide-shade"></div>
+                <div class="slide-content">
+                  <span class="tag">A SLOWER RHYTHM</span>
+                  <h3>Among the evergreens.</h3>
+                  <p>Follow the light. Let the forest set the pace.</p>
+                  <button class="text-link" data-story="forest">
+                    Take a closer look <span aria-hidden="true">↗</span>
+                  </button>
+                </div>
+                <span class="slide-note">THE FOREST COLLECTION</span>
+              </article>
+              <article
+                class="slide"
+                role="group"
+                aria-roledescription="slide"
+                aria-label="3 of 3: Where the land ends"
+                hidden
+              >
+                <img
+                  src="assets/coast.jpg"
+                  width="1800"
+                  height="1200"
+                  alt="Gentle waves washing onto a sandy beach at sunset"
+                  loading="lazy"
+                />
+                <div class="slide-shade"></div>
+                <div class="slide-content">
+                  <span class="tag">THE LONG WAY HOME</span>
+                  <h3>Where the land ends.</h3>
+                  <p>
+                    Salt in the air. Nothing on the horizon but possibility.
+                  </p>
+                  <button class="text-link" data-story="coast">
+                    Take a closer look <span aria-hidden="true">↗</span>
+                  </button>
+                </div>
+                <span class="slide-note">THE COAST COLLECTION</span>
+              </article>
+            </div>
+            <button class="carousel-arrow previous" aria-label="Previous slide">
+              <span
+                class="carousel-arrow-icon"
+                aria-hidden="true"
+              ></span></button
+            ><button class="carousel-arrow next" aria-label="Next slide">
+              <span class="carousel-arrow-icon" aria-hidden="true"></span>
+            </button>
+            <div class="carousel-footer">
+              <p class="slide-counter" aria-live="polite" aria-atomic="true">
+                <span id="slide-number">01</span
+                ><span class="counter-divider"></span>03
+              </p>
+              <div class="slide-dots" role="group" aria-label="Choose a slide">
+                <button
+                  aria-label="Go to slide 1: Alpine"
+                  aria-current="true"
+                ></button
+                ><button aria-label="Go to slide 2: Forest"></button
+                ><button aria-label="Go to slide 3: Coast"></button>
+              </div>
+              <span class="carousel-hint"
+                >THREE WAYS TO GET A LITTLE LOST
+                <span aria-hidden="true">↗</span></span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="philosophy section-space"
+        id="philosophy"
+        aria-labelledby="philosophy-title"
+      >
+        <div class="container">
+          <div class="philosophy-heading">
+            <p class="eyebrow">
+              <span class="section-number">02 /</span> A DIFFERENT WAY OUT
+            </p>
+            <h2 id="philosophy-title">
+              The best things happen<br />when you <em>take your time.</em>
+            </h2>
+            <p>
+              Fieldwork is a small reminder to make more space for the world
+              outside.<br />Not to conquer it. To connect with it.
+            </p>
+          </div>
+          <div class="values-grid">
+            <article class="value-card">
+              <div class="value-top">
+                <span class="icon icon-compass" aria-hidden="true"></span
+                ><span>01</span>
+              </div>
+              <h3>Wander with intention.</h3>
+              <p>
+                Trade the packed itinerary for an open afternoon. Follow a
+                trail, a feeling, or the path you usually walk past.
+              </p>
+            </article>
+            <article class="value-card">
+              <div class="value-top">
+                <span class="icon icon-leaf" aria-hidden="true"></span
+                ><span>02</span>
+              </div>
+              <h3>Leave a lighter trace.</h3>
+              <p>
+                Stay on the path. Carry out what you carry in. Give wildlife
+                room, and leave the little discoveries where they belong.
+              </p>
+            </article>
+            <article class="value-card">
+              <div class="value-top">
+                <span class="icon icon-sun" aria-hidden="true"></span
+                ><span>03</span>
+              </div>
+              <h3>Notice the little things.</h3>
+              <p>
+                The shape of a leaf. The sound before sunrise. Some of the best
+                parts of being outside will never fit in a photograph.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="pause-section" aria-labelledby="pause-title">
+        <div class="container pause-copy">
+          <p class="eyebrow">A GENTLE REMINDER</p>
+          <h2 id="pause-title">
+            There’s a whole world<br />beyond your <em>screen.</em>
+          </h2>
+          <a class="button button-light" href="#journal"
+            >Stay curious <span aria-hidden="true">↗</span></a
+          >
+        </div>
+      </section>
+      <section
+        class="journal section-space"
+        id="journal"
+        aria-labelledby="journal-title"
+      >
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">
+                <span class="section-number">03 /</span> NOTES FROM OUT THERE
+              </p>
+              <h2 id="journal-title">
+                Little stories. <em>Wide horizons.</em>
+              </h2>
+            </div>
+            <span class="journal-label"
+              >THE FIELDWORK JOURNAL <span aria-hidden="true">↙</span></span
+            >
+          </div>
+          <div class="journal-grid">
+            <article class="film-card">
+              <div class="film-frame">
+                <video
+                  controls
+                  playsinline
+                  preload="metadata"
+                  poster="assets/flower-poster.jpg"
+                  aria-label="A quiet moment: a close-up film of flowers moving in the breeze"
+                >
+                  <source src="assets/flower.mp4" type="video/mp4" />
+                  <track
+                    kind="captions"
+                    src="assets/flower-en.vtt"
+                    srclang="en"
+                    label="English"
+                    default
+                  />
+                  Your browser does not support HTML5 video.
+                  <a href="assets/flower.mp4">Download the film.</a></video
+                ><span class="film-badge">A MOMENT OUTSIDE</span>
+              </div>
+              <div class="article-meta">
+                SHORT FILM <span>·</span> 5 SECONDS OF STILLNESS
+              </div>
+              <h3>The art of looking closer.</h3>
+              <p>
+                A few seconds with the small things. Watch the flowers move, let
+                your shoulders drop, and take a breath.
+              </p>
+            </article>
+            <div class="notes-list">
+              <article class="note">
+                <span class="article-meta"
+                  >FIELD NOTE 001 <span>·</span> MINDFUL WANDERING</span
+                >
+                <h3>An afternoon with<br />nowhere to be.</h3>
+                <p>
+                  Why leaving a little room in your plans can lead to the best
+                  kind of detour.
+                </p>
+                <button class="text-link" data-story="afternoon">
+                  Read the field note <span aria-hidden="true">↗</span>
+                </button>
+              </article>
+              <article class="note">
+                <span class="article-meta"
+                  >FIELD NOTE 002 <span>·</span> EVERYDAY ADVENTURE</span
+                >
+                <h3>Your next adventure<br />might be next door.</h3>
+                <p>
+                  A fresh perspective on the places you thought you already
+                  knew.
+                </p>
+                <button class="text-link" data-story="nearby">
+                  Read the field note <span aria-hidden="true">↗</span>
+                </button>
+              </article>
+            </div>
+          </div>
+          <div class="closing-note">
+            <span class="icon icon-compass" aria-hidden="true"></span>
+            <p>Go somewhere.<br /><em>Come back a little different.</em></p>
+            <a href="#home" class="round-link" aria-label="Back to top">↑</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-top">
+          <a href="#home" class="brand"
+            ><span class="icon icon-compass" aria-hidden="true"></span
+            >fieldwork.</a
+          >
+          <p>A little inspiration to take the long way home.</p>
+          <div class="social-links" aria-label="Social media">
+            <a
+              href="https://www.instagram.com/natgeo/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Explore National Geographic on Instagram (opens in a new tab)"
+              ><span class="icon icon-instagram" aria-hidden="true"></span></a
+            ><a
+              href="https://www.youtube.com/@NatGeo"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Explore National Geographic on YouTube (opens in a new tab)"
+              ><span class="icon icon-youtube" aria-hidden="true"></span
+            ></a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 Fieldwork · An independent student design project</span
+          ><span>MADE FOR THE OUTSIDE <span aria-hidden="true">↗</span></span
+          ><button class="credits-button" data-story="credits">
+            Credits &amp; sources
+          </button>
+        </div>
+      </div>
+    </footer>
+    <dialog
+      class="story-dialog"
+      id="story-dialog"
+      aria-labelledby="dialog-title"
+    >
+      <div class="dialog-shell">
+        <button class="dialog-close" aria-label="Close story" autofocus>
+          ×
+        </button>
+        <p class="eyebrow" id="dialog-category"></p>
+        <h2 id="dialog-title"></h2>
+        <div class="dialog-body" id="dialog-body"></div>
+        <button class="button button-orange dialog-done">
+          Back to wandering <span aria-hidden="true">↗</span>
+        </button>
+      </div>
+    </dialog>
+  </body>
 </html>
